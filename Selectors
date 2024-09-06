@@ -1,0 +1,9 @@
+Selectores
+Etiqueta, identificador,clase
+pseudo Etiqueta
+
+selector o un conjunto{
+atributo: valor;
+atributo: valor;
+atributo: valor;
+}
