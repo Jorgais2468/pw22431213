@@ -1,0 +1,72 @@
+img[alt]{
+    border: 5px solid blue;
+}
+img[src="img/logo_tec.png"]{
+    width: 400px;
+}
+img[src^="img/"]{
+    width: 150px;
+}
+img[src$="png"]{
+    width: 250px;
+}
+img[src*="mg/"]{
+    width: 1000px;
+}
+/* Equivalente a:
+.resaltado
+.ingles
+.archivo */
+article[class~="resaltado"]{
+    border: 1px dashed blue;
+}
+article[class~="ingles"]{
+    border: 1px dashed red;
+}
+article[class~="archivo"]{
+    border: 1px dashed green;
+}
+article[class|="ingles"]{
+    text-align: center;
+}
+
+div > p{
+    color: blue;
+}
+
+div p{
+    color: red;
+}
+
+h2 + p{
+    color: gray;
+}
+
+h2 ~ p{
+    color: green;
+}
+
+#resumen,#experimento,#pruebas,#resultados,#conclusiones{
+    color: red;
+}
+section:not(#referencias){
+    color:blue;
+}
+
+li:nth-child(odd){ /* Impar */
+    color: green;
+}
+li:nth-child(even){ /* Par */
+    color: blue;
+}
+li:nth-child(5){ /* Quinto elemento */
+    color: red;
+}
+li:nth-last-child(1){ /* El primero empezando desde el abajo para arriba */
+    color: purple;
+}
+
+p:first-line{
+    color: red;
+    font-weight: bold;
+}
