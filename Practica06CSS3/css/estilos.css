@@ -1,0 +1,127 @@
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0px auto;
+    min-width: 1078px;
+    max-width: 1078px;
+}
+.contenedor{
+    display: grid;
+    grid-template:
+    "header"
+    "navbar"
+    "principal"
+    "footer";
+}
+.header{
+    background: black;
+    grid-area: header;
+    padding: 10px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header img{
+    width: 35px;
+    vertical-align: middle;
+}
+.header input{
+    height: 100%;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.header article{
+    height: 40px;
+}
+.header article:nth-child(2){
+    text-align: right;
+}
+.header input:nth-child(1){
+    background: rgb(25, 25, 25);
+    width: 160px;
+    border: 1px solid rgb(120, 120, 120);
+    margin-right: 10px;
+}
+.header input:nth-child(2){
+    background: rgb(75, 95, 213);
+    width: 95px;
+    border: 1px solid rgb(75, 95, 213);
+}
+.navbar{
+    background: rgb(216, 220, 241);
+    grid-area: navbar;
+    text-align: center;
+    padding: 60px 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.navbar article:nth-child(1){
+    margin-bottom: 20px;
+}
+.navbar input{
+    width: 50%;
+    height: 50px;
+    color: grey;
+    border-radius: 3px;
+    border: 1px solid grey;
+    box-shadow: 0px 5px 10px rgb(183, 183, 183);
+}
+
+.principal{
+    background: white;
+    grid-area: principal;
+    padding: 100px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 70px;
+    margin-bottom: -70px;
+}
+.principal article{
+    display: grid;
+    grid-template-columns: 90px auto;
+    height: 180px;
+    text-align: left;
+}
+.principal img{
+    width: 65px;
+}
+.footer{
+    background: black;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 30px 70px;
+}
+.footer img{
+    width: 40px;
+}
+.footer article{
+    display: inline-block;
+}
+.footer ul{
+    list-style-type: none;
+    padding: 0px;
+}
+.footer li{
+    margin-bottom: 5px;
+}
+.footer article:nth-child(5){
+    margin-top: 110px;
+}
+.texto_blanco{
+    color: white;
+}
+.texto_azul{
+    color: rgb(81, 98, 210);
+}
+.texto_footer{
+    font-size: 0.75em;
+}
+.nito{
+    font-weight: bold;
+}
+.titulo_navbar{
+    font-size: 3em;
+}

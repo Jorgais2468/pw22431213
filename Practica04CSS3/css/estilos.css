@@ -1,0 +1,150 @@
+html{
+    --color-verde: #73F33D;
+    --color-grisclaro: lightgray;
+    --color-gris: gray;
+}
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0px auto;
+    max-width: 1024px;
+    min-width: 1024px;
+    padding: 20px 20px;
+}
+header{
+    display: grid;
+    grid-template-columns: 550px 470px;
+    grid-template-rows: 200px;
+}
+header nav{
+    margin-left: -40px;
+}
+header nav ul li{
+    display: inline-block;
+    margin-right: 18px;
+}
+footer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 25px
+}
+footer hr{
+    border-style: solid;
+}
+hr{
+    color: var(--color-grisclaro);
+    border-style: dashed;
+}
+#header_article01{
+    display: grid;
+    grid-template-columns: 550px;
+    grid-template-rows: 100px 100px;
+    align-items: center;
+}
+#header_article01_01{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#header_article01_02{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#header_article02{
+    display: grid;
+    grid-template-columns: 80px 250px 45px 45px 45px;
+    grid-template-rows: 100px 100px;
+}
+#buy{
+    margin-left: 90px;
+    margin-top: 25px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#go_to_shop{
+    margin-left: 80px;
+    margin-top: 65px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#logo_rojo{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+#bandera{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+#mundo{
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+#seccion01{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 550px 470px;
+    grid-template-rows: 200px 125px 250px;
+}
+#seccion01_article01{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#seccion01_article02{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 20px;
+    align-content: center;
+}
+#seccion01_article03{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    align-content: end;
+}
+#seccion01_article04{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: 190px 280px;
+    grid-template-rows: 1fr 1fr;
+    align-items: end;
+}
+#seccion02 {
+    display: flex;
+    align-items: center;
+}
+#bike{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+#years{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#seccion02{
+    margin-top: 40px;
+}
+.nito{
+    font-weight: bold;
+}
+.colorverde{
+    color: var(--color-verde);
+}
+.colorgrisclaro{
+    color: var(--color-grisclaro);
+}
+.colorgris{
+    color: var(--color-gris);
+}
+.letragrande{
+    font-size: 4em;
+}
+.videos{
+    height: 194px;
+}
+.buy{
+    height: 65px;
+}
+.logos{
+    height: 35px;
+}
